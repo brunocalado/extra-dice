@@ -10,5 +10,15 @@ Hooks.once('diceSoNiceReady', (dice3d) => {
     system:"alien", 
     modelFile: 'modules/' + moduleName + '/models/alien/alien.glb'    
   });
-
+  
+  // ---------------------------------------------------------
+  // Alien Model
+  dice3d.addSystem({id:"alien_flickering", name:"Alien Flickering"}, false);
+  
+  dice3d.addDicePreset({
+    type:"d6",
+    system:"alien_flickering", 
+    modelFile: 'modules/' + moduleName + '/models/alien/alien_flickering.glb'    
+  });
+  
 });
