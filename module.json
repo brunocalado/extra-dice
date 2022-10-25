@@ -1,0 +1,39 @@
+{
+	"id": "extra-dice",
+	"title": "Extra - Dice",
+	"description": "",
+  
+	"version": "0.0.1",
+  
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  
+  "authors": [
+    {
+      "name": "Mestre Digital",
+      "url": "https://www.youtube.com/c/MestreDigital",
+      "flags": {}
+    }
+  ],
+  
+	"esmodules": [
+		"./scripts/main.js"
+	],
+	"styles": [],
+	"url": "https://github.com/brunocalado/extra-dice",
+  "manifest": "https://raw.githubusercontent.com/brunocalado/extra-dice/main/module.json",  
+  "download": "https://codeload.github.com/brunocalado/extra-dice/zip/main",
+  
+  "relationships": {
+    "requires": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json"
+      }
+    ]
+  }
+}
+
