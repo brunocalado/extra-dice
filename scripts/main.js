@@ -3,22 +3,32 @@ const moduleName = 'extra-dice';
 Hooks.once('diceSoNiceReady', (dice3d) => {
   // ---------------------------------------------------------
   // Alien Model
-  dice3d.addSystem({id:"alien", name:"Alien"}, false);
+  dice3d.addSystem({id:"alien-extradice", name:"Alien - ED"}, false);
   
   dice3d.addDicePreset({
-    type:"d6",
-    system:"alien", 
+    type:"db",
+    system:"alien-extradice", 
     modelFile: 'modules/' + moduleName + '/models/alien/alien.glb'    
   });
-  
+
   // ---------------------------------------------------------
-  // Alien Model
-  dice3d.addSystem({id:"alien_flickering", name:"Alien Flickering"}, false);
+  // Alien Fast Pulse
+  dice3d.addSystem({id:"alien_fast_pulse-extradice", name:"Alien Fast Pulse - ED"}, false);
   
   dice3d.addDicePreset({
-    type:"d6",
-    system:"alien_flickering", 
-    modelFile: 'modules/' + moduleName + '/models/alien/alien_flickering.glb'    
-  });
+    type:"db",
+    system:"alien_fast_pulse-extradice", 
+    modelFile: 'modules/' + moduleName + '/models/alien/alien_fast_pulse.glb'    
+  });                                                   
+ 
+  // ---------------------------------------------------------
+  // Alien Stress
+  dice3d.addSystem({id:"alien_stress-extradice", name:"Alien Stress - ED"}, false);
   
+  dice3d.addDicePreset({
+    type:"ds",
+    system:"alien_stress-extradice", 
+    modelFile: 'modules/' + moduleName + '/models/alien/alien_stress.glb'    
+  });  
+ 
 });
